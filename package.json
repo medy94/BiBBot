@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/medy94/BiBBot#readme",
   "dependencies": {
-    "discord.js": "^13.1.0",
-    "express": "^4.17.1"
+    "discord.js": "^12.5.3",
+    "express": "^4.17.1",
+    "node-cron": "^3.0.0"
   }
 }

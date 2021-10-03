@@ -7,9 +7,9 @@ const cronJobs = require("./cronJobs");
 const PRODUCTION_MODE = true;
 const START_MESSAGE = false;
 
-const ADMIN_CHANNEL_ID = PRODUCTION_MODE ? '835778663680835625' : '837701215113838629';
-const HOME_CHANNEL_ID = PRODUCTION_MODE ? '835172453927485541' : '837701215113838628';
-const WELCOME_CHANNEL_ID = PRODUCTION_MODE ? '834827973479235637' : '837701215113838631';
+const ADMIN_CHANNEL_ID = '894277404661547128';
+const HOME_CHANNEL_ID = '894272742134800456';
+const WELCOME_CHANNEL_ID = HOME_CHANNEL_ID;
 
 keepAlive();
 cronJobs(client);
@@ -28,3 +28,5 @@ client.on("message", msg => {
         }
     }
 });
+
+client.login(PRODUCTION_MODE ? process.env.PROD_TOKEN : process.env.DEV_TOKEN)
